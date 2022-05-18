@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: fcc92fc98e435a54a9b549cbf42a8b26
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - iyi: {fileID: 1428504772129882519, guid: 4b62247965ddd5741b30801e66633188, type: 3}
+  - kotu: {fileID: 2730682370018753895, guid: 801afcebca9c06043a79138e81a46dbf, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
