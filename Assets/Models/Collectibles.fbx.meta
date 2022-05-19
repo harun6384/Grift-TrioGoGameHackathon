@@ -3,7 +3,67 @@ guid: bd1889d8ef334894983fc5c3a995f1bf
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bisikletteker
+    second: {fileID: 2100000, guid: ef4b252932b173548bb44fcdf8c6a6ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cam
+    second: {fileID: 2100000, guid: 195cd1de3460f8e40883db2bea0ea01e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Deodorant
+    second: {fileID: 2100000, guid: e648dc78129fddc4ba5529b7f62e6fdf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kapak
+    second: {fileID: 2100000, guid: dc539467723728a429a213e41eda4555, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KapakSiyah
+    second: {fileID: 2100000, guid: 248b9a5419c6d7b45ace3e0b4831fd97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 6c8265c3687992048a3ede74c0919528, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 2cc01fa6a5d83964cacc80ffca3ba6c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: c8035935cf6d25e4897335a5d967b51c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: d1af18c5e7387f2419eb9507e031d521, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 9c65d3df94ceb5a4d801a4cf0f900ed8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "arabag\xF6vde"
+    second: {fileID: 2100000, guid: b9d9e7ee88bde0c4eb230a17b34d68ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tekerletk
+    second: {fileID: 2100000, guid: 6a44706a2415dc54dad6287ea74ec2d7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -10,7 +10,8 @@ public class UCollectible : MonoBehaviour
     public Transform after;
     public Transform[] sp;
     List<int> sayilar = new List<int>();
-    [SerializeField] GameObject iyi, kotu, nextTile;
+    [SerializeField] public GameObject[] iyi, kotu, nextTile;
+
 
     private void OnEnable()
     {
@@ -21,15 +22,16 @@ public class UCollectible : MonoBehaviour
         for (int i = 0; i <= 2;i++)
         {
             //int a = rand.Next(1, 4);
+            int a = rand.Next(0, 3);
 
             temp = rand.Next(1, 3);
             switch (i + 1)
             {
                 case 1:
-                    Instantiate(temp == 1 ? iyi : kotu, sp[rand.Next(1, 3) == 1 ? 0 : 1]);
+                    Instantiate(temp == 1 ? iyi[a] : kotu[a], sp[rand.Next(1, 3) == 1 ? 0 : 1]);
                     break;
                 case 2:
-                    Instantiate(current ? kotu : iyi, sp[rand.Next(1, 3) == 1 ? 2 : 3]);
+                    Instantiate(current ? kotu[a] : iyi[a], sp[rand.Next(1, 3) == 1 ? 2 : 3]);
                     break;
                 /*case 3:
                     Instantiate(current ? iyi : kotu, sp[3]);
