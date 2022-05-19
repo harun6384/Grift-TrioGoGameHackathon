@@ -9,6 +9,7 @@ TagManager:
   - BadObj
   - SpawnPoint
   - NextTile
+  - EndGame
   layers:
   - Default
   - TransparentFX

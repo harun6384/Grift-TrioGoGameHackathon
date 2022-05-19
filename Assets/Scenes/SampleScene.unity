@@ -155,6 +155,7 @@ MonoBehaviour:
   _score: {fileID: 398526248}
   score: 0
   durum: 50
+  bitis: 0
   biyom1:
   - {fileID: 3477144512777640667, guid: d5e41c8afbb606446aabe15a98be52c0, type: 3}
   - {fileID: 1903745820873285261, guid: 321c521545792f54487b9798658f9091, type: 3}
@@ -163,6 +164,8 @@ MonoBehaviour:
   - {fileID: 4515917019035686906, guid: ea615a27aa5af9344a933dc0f250b7e4, type: 3}
   - {fileID: 673208404796484287, guid: 97a4ea61f1c44544b82216564c3b782c, type: 3}
   - {fileID: 763731052139514152, guid: 42741ebf0af273643b8f7ff1cc9ca8bf, type: 3}
+  - {fileID: 948590120072460843, guid: f24202bd30424f44d9bcb0f44404dae4, type: 3}
+  - {fileID: 9057997215613270576, guid: 9eb9406345a971648ad68d7a6bf98c35, type: 3}
   player: {fileID: 1217462088356329612, guid: fa15b20ffa5dc9748ae90b18838f969a, type: 3}
 --- !u!4 &259926394
 Transform:
@@ -636,8 +639,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.095966235, y: -0.90379894, z: 0.29937893, w: -0.2903624}
-  m_LocalPosition: {x: -5.459491, y: 6.60131, z: 9.066641}
+  m_LocalRotation: {x: -0.0037554814, y: 0.9419413, z: -0.3356385, w: -0.008899643}
+  m_LocalPosition: {x: 0, y: 7, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -656,7 +659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2701953148109030143, guid: 7078a074605599346b39060915209196, type: 3}
-  distance: {x: 0, y: 5, z: 6}
+  distance: {x: -1.7, y: 1, z: 1}
   smooth: 0.3
 --- !u!1001 &1267437638
 PrefabInstance:

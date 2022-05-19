@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     List<int> sayilar = new List<int>();
     public int score = 0;
     public int durum = 50;
+    public int bitis = 0;
 
     private static GameManager _instance;
     public static GameManager Instance
@@ -53,6 +54,7 @@ public class GameManager : MonoBehaviour
 
     public void siraOlustur()
     {
+        bitis++;
         if (durum <= 30)
         {
             sira = rand.Next(4, 7);
@@ -64,6 +66,14 @@ public class GameManager : MonoBehaviour
         if (durum > 70)
         {
             sira = 0;
+        }
+        if(bitis == 20 && durum >30)
+        {
+            sira = 7;
+        }
+        if (bitis == 20 && durum <= 30)
+        {
+            sira = 8;
         }
     }
     

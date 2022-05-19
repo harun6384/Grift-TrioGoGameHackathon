@@ -483,6 +483,7 @@ GameObject:
   - component: {fileID: 1217462088356329610}
   - component: {fileID: 1217462088356329613}
   - component: {fileID: 1217462088356329608}
+  - component: {fileID: 743615195064398958}
   m_Layer: 0
   m_Name: aj
   m_TagString: Hero
@@ -554,6 +555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f91e4808ca1821e4ba8fbedde649101e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectSound: {fileID: 8300000, guid: f21d3ee4fe875804e826c1a824a04efc, type: 3}
 --- !u!136 &1217462088356329613
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -584,6 +586,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &743615195064398958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217462088356329612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8883f56ef0104c478e530ceeb809d24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1242390139483934245
 GameObject:
   m_ObjectHideFlags: 0

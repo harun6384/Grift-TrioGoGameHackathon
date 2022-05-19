@@ -21,6 +21,6 @@ public class Movement : MonoBehaviour
 
         //float horizontalAxis = Input.GetAxis("Horizontal") * yawSpeed * Time.deltaTime;
         //this.transform.Translate(-(xPos), 0, -(forwardSpeed * Time.deltaTime));
-        this.transform.position = new Vector3(xPos, 1f, this.transform.position.z-(forwardSpeed * Time.deltaTime));
+        this.transform.position = new Vector3(xPos, 0.5f, this.transform.position.z-(forwardSpeed * Time.deltaTime));
     }
 }

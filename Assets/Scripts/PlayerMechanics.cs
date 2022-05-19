@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 public class PlayerMechanics : MonoBehaviour
 {
-    
+    public AudioClip collectSound;
 
     private void Start()
     {
@@ -20,8 +20,7 @@ public class PlayerMechanics : MonoBehaviour
             other.gameObject.SetActive(false);
             //GameManager.Instance.iyiOrman(other.GetComponentInParent<UCollectible>().after);
             GameManager.Instance.durum -= 10;
-
-            
+            AudioSource.PlayClipAtPoint(collectSound, transform.position); 
         }
         if (other.gameObject.CompareTag("GoodObj"))
         {
@@ -29,12 +28,16 @@ public class PlayerMechanics : MonoBehaviour
             GameManager.Instance._score.text = GameManager.Instance.score.ToString();
             other.gameObject.SetActive(false);
             GameManager.Instance.durum += 10;
-
-            
+            AudioSource.PlayClipAtPoint(collectSound, transform.position);
         }
         if (other.gameObject.CompareTag("NextTile"))
         {
             GameManager.Instance.nextTile(other.GetComponentInParent<UCollectible>().after);
+        }
+        if (other.gameObject.CompareTag("EndGame"))
+        {
+            Time.timeScale = 0;
+
         }
     }
 
