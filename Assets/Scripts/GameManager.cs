@@ -2,13 +2,16 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-
-    System.Random rand = new System.Random();
+    private System.Random rand = new System.Random(); 
+    [SerializeField] public TMP_Text _score;
     List<int> sayilar = new List<int>();
     public int score = 0;
+    public int durum = 50;
+    public int bitis = 0;
 
     private static GameManager _instance;
     public static GameManager Instance
@@ -46,33 +49,45 @@ public class GameManager : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            biyomObjects.Enqueue(Instantiate(biyom1[1], transform));
-        }
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            if (biyomObjects.Count > 0)
-                Destroy((GameObject)biyomObjects.Dequeue());
-        }
+        
     }
 
-
-    public void iyiOrman()
+    public void siraOlustur()
     {
-        int temp = sira - 1;
-        if (biyom1[temp] != null)
-            biyomObjects.Enqueue(Instantiate(biyom1[++sira]));
-        CreateMap();
+        bitis++;
+        if (durum <= 30)
+        {
+            sira = rand.Next(4, 7);
+        }
+        if (durum > 30 && durum <= 70)
+        {
+            sira = rand.Next(1,4);
+        }
+        if (durum > 70)
+        {
+            sira = 0;
+        }
+        if(bitis == 20 && durum >30)
+        {
+            sira = 7;
+        }
+        if (bitis == 20 && durum <= 30)
+        {
+            sira = 8;
+        }
+    }
+    
+
+    public void nextTile(Transform after)
+    {
+        siraOlustur();
+        biyomObjects.Enqueue(Instantiate(biyom1[sira], after));
     }
 
-    public void kotuOrman()
-    {
-        int temp = sira - 1;
-        if (biyom1[temp] != null)
-            biyomObjects.Enqueue(Instantiate(biyom1[++sira]));
-        CreateMap();
-    }
+    //public void deleteOnBack()
+    //{
+    //    Destroy((GameObject)biyomObjects.Dequeue());
+    //}
 
     private void CreateMap()
     {

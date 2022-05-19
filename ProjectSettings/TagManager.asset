@@ -8,6 +8,8 @@ TagManager:
   - GoodObj
   - BadObj
   - SpawnPoint
+  - NextTile
+  - EndGame
   layers:
   - Default
   - TransparentFX
