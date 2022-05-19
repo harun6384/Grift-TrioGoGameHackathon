@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-
+    private float xMin = -4f, xMax = 1f;
     [SerializeField] private float forwardSpeed;
     [SerializeField] private float yawSpeed;
 
@@ -16,7 +16,11 @@ public class Movement : MonoBehaviour
     
     void Update()
     {
-        float horizontalAxis = Input.GetAxis("Horizontal") * yawSpeed * Time.deltaTime;
-        this.transform.Translate(horizontalAxis, 0, forwardSpeed * Time.deltaTime);
+        float xPos = Mathf.Clamp(this.transform.position.x - Input.GetAxis("Horizontal") * yawSpeed * Time.deltaTime, xMin, xMax);
+        Debug.Log(this.transform.position.x);
+
+        //float horizontalAxis = Input.GetAxis("Horizontal") * yawSpeed * Time.deltaTime;
+        //this.transform.Translate(-(xPos), 0, -(forwardSpeed * Time.deltaTime));
+        this.transform.position = new Vector3(xPos, 1f, this.transform.position.z-(forwardSpeed * Time.deltaTime));
     }
 }

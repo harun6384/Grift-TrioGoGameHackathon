@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-using Rnadom = System.Random;
 
 public class UCollectible : MonoBehaviour
 {
 
     System.Random rand = new System.Random();
+    public Transform after;
 
     public Transform[] sp;
     List<int> sayilar = new List<int>();
-    [SerializeField] GameObject iyi, kotu;
+    [SerializeField] GameObject iyi, kotu, nextTile;
 
     private void OnEnable()
     {
