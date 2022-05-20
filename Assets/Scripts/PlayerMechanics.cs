@@ -5,10 +5,12 @@ using TMPro;
 public class PlayerMechanics : MonoBehaviour
 {
     public AudioClip collectSound;
+    public GameObject bgMusic;
 
     private void Start()
     {
         GameManager.Instance._score.text = GameManager.Instance.score.ToString();
+        bgMusic = GameObject.Find("BackgroundAudio");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -37,6 +39,7 @@ public class PlayerMechanics : MonoBehaviour
         if (other.gameObject.CompareTag("EndGame"))
         {
             Time.timeScale = 0;
+            bgMusic.SetActive(false);
 
         }
     }

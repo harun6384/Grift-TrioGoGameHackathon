@@ -20,7 +20,7 @@ public class DragMove : MonoBehaviour
         Time.timeScale = 1;
         
         speedModifier = 0.01f;
-        rb.velocity = transform.forward * 100 * Time.deltaTime;
+        rb.velocity = transform.forward * 200 * Time.deltaTime;
     }
 
     void Update()
@@ -33,7 +33,7 @@ public class DragMove : MonoBehaviour
             if (touch.phase == TouchPhase.Moved)
             {
                 transform.position = new Vector3(
-                    transform.position.x + Mathf.Clamp(touch.deltaPosition.x, -20, 20) * -speedModifier,
+                    transform.position.x + Mathf.Clamp(touch.deltaPosition.x, -5, 5) * -speedModifier,
                     .5f,
                     transform.position.z);
             }

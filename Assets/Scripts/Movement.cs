@@ -17,8 +17,6 @@ public class Movement : MonoBehaviour
     void Update()
     {
         float xPos = Mathf.Clamp(this.transform.position.x - Input.GetAxis("Horizontal") * yawSpeed * Time.deltaTime, xMin, xMax);
-        Debug.Log(this.transform.position.x);
-
         //float horizontalAxis = Input.GetAxis("Horizontal") * yawSpeed * Time.deltaTime;
         //this.transform.Translate(-(xPos), 0, -(forwardSpeed * Time.deltaTime));
         this.transform.position = new Vector3(xPos, 0.5f, this.transform.position.z-(forwardSpeed * Time.deltaTime));
