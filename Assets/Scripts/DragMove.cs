@@ -33,7 +33,7 @@ public class DragMove : MonoBehaviour
             if (touch.phase == TouchPhase.Moved)
             {
                 transform.position = new Vector3(
-                    transform.position.x + Mathf.Clamp(touch.deltaPosition.x, -5, 5) * -speedModifier,
+                    transform.position.x + Mathf.Clamp(touch.deltaPosition.x, -20, 20) * -speedModifier,
                     .5f,
                     transform.position.z);
             }
