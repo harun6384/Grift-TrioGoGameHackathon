@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hakkinda.unity
     guid: 27a95a26c4f322e4bbce991a1fb76121
+  - enabled: 1
+    path: Assets/Scenes/YuksekSkorlar.unity
+    guid: 7f6585b2fe3d9b94183d1bf422f22a23
   m_configObjects: {}
